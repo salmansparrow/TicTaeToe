@@ -1,0 +1,55 @@
+.mainContainer {
+  background-color: #f8f9fa; /* Light background for the whole section */
+  padding: 20px; /* Padding around the section */
+}
+
+.gameContainer {
+  background-color: yellow; /* Background color for the left column */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Make it take full height */
+}
+
+.gameBoard {
+  width: 300px; /* Fixed width for the game board */
+}
+
+.row {
+  display: flex; /* Use flex to arrange children in a row */
+}
+
+.col {
+  flex: 1; /* Each column takes equal space */
+  display: flex; /* Make the col itself a flex container */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  border: 2px solid black; /* Border to visualize cells */
+  height: 100px; /* Fixed height for each cell */
+  font-size: 24px; /* Font size for text in cells */
+  background-color: #f0f0f0; /* Light background for cells */
+}
+
+.box {
+  width: 100px; /* Fixed width for each cell */
+  height: 100px; /* Fixed height for each cell */
+  cursor: pointer;
+  &:hover {
+    background-color: slategrey;
+  }
+}
+
+.rightColumn {
+  background-color: #e9ecef; /* Light gray background for game info */
+  padding: 20px; /* Padding for content inside the right column */
+  height: 100%; /* Make it take full height */
+}
+
+.gameInfo {
+  font-size: 18px; /* Font size for the game info */
+  text-align: left; /* Left align the text */
+}
+
+// .winnerGif {
+//   display: none;
+// }
